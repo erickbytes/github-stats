@@ -32,14 +32,15 @@ def views_traffic(repo):
 # In an ubuntu shell, set access_token variable: export access_token=your_github_token
 access_token = os.getenv("access_token")
 auth = Auth.Token(access_token)
-# Public Web Github
 g = Github(auth=auth)
+# Must be your own repos.
 repos = [
     "lofipython",
     "delta_airports",
     "wayak-website",
     "finsou.py",
     "divbull",
+    "restaurant-profit-projector",
     "github-stats",
 ]
 rows = list()
