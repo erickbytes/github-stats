@@ -43,7 +43,7 @@ github.GithubException.GithubException: 403
 {"message": "Must have push access to repository",
 "documentation_url": "https://docs.github.com/rest/metrics/traffic#get-top-referral-sources"}
 ```
-I fixed this error by going to ["Developer Settings > Tokens"](https://github.com/settings/tokens?type=beta) > "Fine Grained Token" > Create New Token or Edit and then setting "Repository permissions" > "Content" > "Read and write".
+I fixed this error by going to ["Developer Settings > Tokens"](https://github.com/settings/tokens?type=beta) > "Fine Grained Token" > "Generate New Token" or Edit > Set "Repository permissions" > "Content" to "Read and write".
 
 <br />
 
