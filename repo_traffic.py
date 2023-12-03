@@ -6,7 +6,7 @@ from tqdm import tqdm
 
 
 def top_referrers(repo):
-    """Returns dictionary of github repo referrers.
+    """Returns dictionary of Github repo referrers.
     https://pygithub.readthedocs.io/en/latest/examples/Repository.html#get-the-top-10-referrers-over-the-last-14-days
     """
     contents = repo.get_top_referrers()

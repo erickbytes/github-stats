@@ -1,6 +1,6 @@
 # github-stats
 
-This Python code uses the [PyGithub](https://pygithub.readthedocs.io/en/latest/index.html) module to return data about a Github repo. This repo holds scripts returning Github data for repo:
+There are 2 Python scripts in this repo. **repo_traffic.py** uses the [PyGithub](https://pygithub.readthedocs.io/en/latest/index.html) module to return clones, views and referrers of your own Github repos. **stargazers.py** returns the stargazers of any Github repo. This repo holds scripts returning Github data for repo:
 - clones
 - referrers
 - views
@@ -21,7 +21,7 @@ New to Python? Read more about pip installs [on my blog](https://lofipython.com/
 
 **Troubleshooting "Must have push access to repository"**
 ```
-github.GithubException.GithubException: 403 
+github.GithubException.GithubException: 403
 {"message": "Must have push access to repository",
 "documentation_url": "https://docs.github.com/rest/metrics/traffic#get-top-referral-sources"}
 ```
