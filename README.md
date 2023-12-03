@@ -8,7 +8,7 @@ In this repo, there are 2 Python scripts for querying data via the [PyGithub](ht
 
 <br />
 
-**stargazers.py** returns the stargazers of any Github repo.
+**stargazers.py** returns the stargazer count of any Github repo.
 
 <br />
 
