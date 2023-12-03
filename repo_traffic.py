@@ -6,7 +6,7 @@ from tqdm import tqdm
 
 
 def top_referrers(repo):
-    """Returns dictionary of github repo referral traffic.
+    """Returns dictionary of github repo referrers.
     https://pygithub.readthedocs.io/en/latest/examples/Repository.html#get-the-top-10-referrers-over-the-last-14-days
     """
     contents = repo.get_top_referrers()
@@ -14,7 +14,7 @@ def top_referrers(repo):
 
 
 def clones_traffic(repo):
-    """Returns dictionary of Github repo clones traffic.
+    """Returns dictionary of Github repo clones.
     https://pygithub.readthedocs.io/en/latest/examples/Repository.html#get-number-of-clones-and-breakdown-for-the-last-14-days
     """
     contents = repo.get_clones_traffic(per="week")
@@ -22,6 +22,9 @@ def clones_traffic(repo):
 
 
 def views_traffic(repo):
+    """Returns dictionary of Github repo views.
+    https://pygithub.readthedocs.io/en/stable/examples/Repository.html?highlight=view#get-number-of-views-and-breakdown-for-the-last-14-days
+    """
     contents = repo.get_views_traffic(per="week")
     return contents
 
