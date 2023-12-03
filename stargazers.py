@@ -28,4 +28,5 @@ access_token = os.getenv("access_token")
 g = Github(access_token)
 counts = [(repo, stars(repo, g)) for repo in repos]
 stars_df = pd.DataFrame(counts, columns=["repo", "stars"])
+stars_df["url"] = urls
 stars_df.to_csv("Stars.csv", index=False)
