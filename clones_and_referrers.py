@@ -2,6 +2,7 @@ import pandas as pd
 import os
 from datetime import date
 from github import Github, GithubException, Auth
+from tqdm import tqdm
 
 
 def top_referrers(repo):
@@ -20,6 +21,11 @@ def clones_traffic(repo):
     return contents
 
 
+def views_traffic(repo):
+    contents = repo.get_views_traffic(per="week")
+    return contents
+
+
 # In an ubuntu shell, set access_token variable: export access_token=your_github_token
 access_token = os.getenv("access_token")
 auth = Auth.Token(access_token)
@@ -34,7 +40,7 @@ repos = [
     "github-stats",
 ]
 rows = list()
-for repo_name in repos:
+for repo_name in tqdm(repos):
     try:
         repo = g.get_repo(f"erickbytes/{repo_name}")
     except GithubException:
@@ -42,9 +48,24 @@ for repo_name in repos:
         continue
     referrers = top_referrers(repo)
     clones = clones_traffic(repo)
-    row = [repo_name, clones["uniques"], clones["count"], referrers]
+    views = views_traffic(repo)
+    row = [
+        repo_name,
+        clones["uniques"],
+        clones["count"],
+        views["uniques"],
+        views["count"],
+        referrers,
+    ]
     rows.append(row)
 
-names = ["Repo Name", "Unique Clones", "Total Clones", "Referrers"]
+names = [
+    "Repo Name",
+    "Unique Clones",
+    "Total Clones",
+    "Unique Views",
+    "Total Views",
+    "Referrers",
+]
 traffic = pd.DataFrame(rows, columns=names)
 traffic.to_csv(f"Github_Traffic_{date.today()}.csv", index=False)
