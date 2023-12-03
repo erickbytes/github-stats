@@ -1,10 +1,14 @@
 # github-stats
 
-There are 2 Python scripts in this repo. **repo_traffic.py** uses the [PyGithub](https://pygithub.readthedocs.io/en/latest/index.html) module to return clones, views and referrers of your own Github repos. **stargazers.py** returns the stargazers of any Github repo. This repo holds scripts returning Github data for repo:
-- clones
-- referrers
-- views
-- stargazers
+In this repo, there are 2 Python scripts for querying data via the [PyGithub](https://pygithub.readthedocs.io/en/latest/index.html) module.
+
+<br />
+
+**repo_traffic.py** returns clones, views and referrers of your own Github repos.
+
+<br />
+
+**stargazers.py** returns the stargazers of any Github repo.
 
 <br />
 
