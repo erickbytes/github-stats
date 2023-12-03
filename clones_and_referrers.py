@@ -25,7 +25,14 @@ access_token = os.getenv("access_token")
 auth = Auth.Token(access_token)
 # Public Web Github
 g = Github(auth=auth)
-repos = ["lofipython", "delta_airports", "wayak-website", "finsou.py", "divbull"]
+repos = [
+    "lofipython",
+    "delta_airports",
+    "wayak-website",
+    "finsou.py",
+    "divbull",
+    "github-stats",
+]
 rows = list()
 for repo_name in repos:
     try:
