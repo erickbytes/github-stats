@@ -7,6 +7,8 @@ This repo holds scripts returning Github data for repo:
 
 This Python code uses the [PyGithub](https://pygithub.readthedocs.io/en/latest/index.html) module to return data about a Github repo.
 
+**Install Python Libraries**
+
 ```
 pip install PyGithub
 pip install pandas
