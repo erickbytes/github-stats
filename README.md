@@ -17,6 +17,7 @@ In this repo, there are 2 Python scripts for querying data via the [PyGithub](ht
 ```
 pip install PyGithub
 pip install pandas
+pip install tabulate
 pip install tqdm
 ```
 New to Python? Read more about pip installs [on my blog](https://lofipython.com/how-to-python-pip-install-new-libraries).
