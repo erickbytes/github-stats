@@ -1,8 +1,8 @@
 Repo Name,Unique Clones,Total Clones,Unique Views,Total Views,Referrers
-lofipython,10,12,2,33,"[Referrer(uniques=1, referrer=""github.com"", count=25)]"
 delta_airports,26,39,3,212,"[Referrer(uniques=1, referrer=""github.com"", count=87), Referrer(uniques=1, referrer=""l.facebook.com"", count=10)]"
+github-stats,25,35,1,193,[]
 wayak-website,20,22,2,134,"[Referrer(uniques=1, referrer=""github.com"", count=63), Referrer(uniques=1, referrer=""outlook.live.com"", count=3)]"
-finsou.py,3,4,2,7,"[Referrer(uniques=1, referrer=""github.com"", count=6)]"
 divbull,13,16,2,13,[]
-restaurant-profit-projector,0,0,0,0,[]
-github-stats,25,35,1,124,[]
+lofipython,10,12,2,33,"[Referrer(uniques=1, referrer=""github.com"", count=25)]"
+finsou.py,3,4,2,7,"[Referrer(uniques=1, referrer=""github.com"", count=6)]"
+restaurant-profit-projector,0,0,1,10,[]

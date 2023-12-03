@@ -72,4 +72,5 @@ names = [
     "Referrers",
 ]
 traffic = pd.DataFrame(rows, columns=names)
+traffic = traffic.sort_values(by="Unique Clones", ascending=False)
 traffic.to_csv(f"Github_Traffic_{date.today()}.csv", index=False)
