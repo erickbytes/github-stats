@@ -1,12 +1,10 @@
 # github-stats
 
-This repo holds scripts returning Github data for repo:
+This Python code uses the [PyGithub](https://pygithub.readthedocs.io/en/latest/index.html) module to return data about a Github repo. This repo holds scripts returning Github data for repo:
 - clones
 - referrers
 - views
 - stargazers
-
-This Python code uses the [PyGithub](https://pygithub.readthedocs.io/en/latest/index.html) module to return data about a Github repo.
 
 <br />
 
@@ -31,7 +29,7 @@ I fixed this error by going to ["Developer Settings"](https://github.com/setting
 
 **curl Github API Example**
 
-This is another way to get repo data from the Github API:
+This is another way to get repo data from the [Github API](https://docs.github.com/en/rest/metrics/traffic#get-repository-clones):
 ```
 curl -L \
   -H "Accept: application/vnd.github+json" \
