@@ -18,10 +18,8 @@ pip install tqdm
 New to Python? Read more about pip installs [on my blog](https://lofipython.com/how-to-python-pip-install-new-libraries).
 
 
-**Troubleshooting**
-
-"Must have push access to repository"
+**Troubleshooting "Must have push access to repository"**
 ```
 github.GithubException.GithubException: 403 {"message": "Must have push access to repository", "documentation_url": "https://docs.github.com/rest/metrics/traffic#get-top-referral-sources"}
 ```
-This can be remedied by going to ["Developer Settings"](https://github.com/settings/tokens)) > "Fine Grained Token" > "Edit" > "repository permissions" > "content" > "read + write".
+This error can be fixed by going to ["Developer Settings"](https://github.com/settings/tokens) > "Fine Grained Token" > Create New Token or Edit > "Repository permissions" > "Content" > "Read and write".
