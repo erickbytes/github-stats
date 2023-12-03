@@ -30,7 +30,8 @@ I fixed this error by going to ["Developer Settings"](https://github.com/setting
 <br />
 
 **curl Github API Example**
-This is another way to get the data from the Github API:
+
+This is another way to get repo data from the Github API:
 ```
 curl -L \
   -H "Accept: application/vnd.github+json" \
