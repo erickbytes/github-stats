@@ -32,6 +32,8 @@ export access_token=your_github_token
 ```
 Then edit the script with your custom repo names and run the script.
 
+<br />
+
 **Troubleshooting "Must have push access to repository"**
 ```
 github.GithubException.GithubException: 403
