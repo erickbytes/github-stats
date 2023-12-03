@@ -35,6 +35,8 @@ Then edit the script with your custom repo names and run the script.
 
 <br />
 
+![Running The Python Script](markdown-screenshot.png "Markdown Table of Github Repo Stats")
+
 **Troubleshooting "Must have push access to repository"**
 ```
 github.GithubException.GithubException: 403
