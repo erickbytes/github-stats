@@ -23,6 +23,14 @@ New to Python? Read more about pip installs [on my blog](https://lofipython.com/
 
 <br />
 
+**Ubuntu Shell Authorization**
+You'll need to create a Github token. Once you have a token, fill it in and then
+run this command to set an environment variable:
+```
+export access_token=your_github_token
+```
+Then edit the script with your custom repo names and run the script.
+
 **Troubleshooting "Must have push access to repository"**
 ```
 github.GithubException.GithubException: 403
