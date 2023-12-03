@@ -23,7 +23,8 @@ New to Python? Read more about pip installs [on my blog](https://lofipython.com/
 
 <br />
 
-**Ubuntu Shell Authorization**
+**Ubuntu Shell Authorization Token**
+
 You'll need to create a Github token. Once you have a token, fill it in and then
 run this command to set an environment variable:
 ```
