@@ -1,12 +1,12 @@
 import pandas as pd
 import os
 from datetime import date
-from github import Github, GithubException, Auth
+from github import Auth, Github, GithubException
 from tqdm import tqdm
 
 
 def top_referrers(repo):
-    """Returns list of Github repo referrers.
+    """Returns list of top 10 Github repo referrers for the last 14 days.
     https://pygithub.readthedocs.io/en/latest/examples/Repository.html#get-the-top-10-referrers-over-the-last-14-days
     """
     contents = repo.get_top_referrers()
@@ -14,7 +14,7 @@ def top_referrers(repo):
 
 
 def clones_traffic(repo):
-    """Returns dictionary of Github repo clones.
+    """Returns dictionary of Github repo clones for the last 14 days.
     https://pygithub.readthedocs.io/en/latest/examples/Repository.html#get-number-of-clones-and-breakdown-for-the-last-14-days
     """
     contents = repo.get_clones_traffic(per="week")
@@ -22,7 +22,7 @@ def clones_traffic(repo):
 
 
 def views_traffic(repo):
-    """Returns dictionary of Github repo views.
+    """Returns dictionary of Github repo views for the last 14 days.
     https://pygithub.readthedocs.io/en/stable/examples/Repository.html?highlight=view#get-number-of-views-and-breakdown-for-the-last-14-days
     """
     contents = repo.get_views_traffic(per="week")
