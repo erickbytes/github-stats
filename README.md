@@ -18,7 +18,7 @@ pip install tqdm
 ```
 New to Python? Read more about pip installs [on my blog](https://lofipython.com/how-to-python-pip-install-new-libraries).
 
-
+<br />
 
 **Troubleshooting "Must have push access to repository"**
 ```
