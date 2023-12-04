@@ -38,9 +38,12 @@ repos = [
     "lofipython",
     "delta_airports",
     "wayak-website",
+    "mas-tacos",
     "finsou.py",
     "divbull",
+    "positivity-app",
     "restaurant-profit-projector",
+    "unsplash-to-fb-page",
     "github-stats",
 ]
 rows = list()
