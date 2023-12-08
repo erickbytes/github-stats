@@ -40,6 +40,7 @@ repos = [
     "wayak-website",
     "mas-tacos",
     "finsou.py",
+    "russell-2000-index",
     "divbull",
     "positivity-app",
     "restaurant-profit-projector",
